@@ -60,7 +60,7 @@ class SiriProxy::Plugin::WhereAmI < SiriProxy::Plugin
       map_snippet = SiriMapItemSnippet.new
       map_snippet.userCurrentLocation = true
       map_snippet.items << map
-      utterance = SiriAssistantUtteranceView.new("You were here:","Here's a map")
+      utterance = SiriAssistantUtteranceView.new("You are here:","Here's a map")
       add_views.views << utterance
       add_views.views << map_snippet
 
