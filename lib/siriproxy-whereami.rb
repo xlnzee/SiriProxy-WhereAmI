@@ -97,7 +97,7 @@ class SiriProxy::Plugin::WhereAmI < SiriProxy::Plugin
     end
   end 
 
-  listen_for /(where am i|whats my location|what is my location)/i do
+  listen_for /(where am i|what's my location|what is my location)/i do
     
     add_views = SiriAddViews.new
     add_views.temporary = true
